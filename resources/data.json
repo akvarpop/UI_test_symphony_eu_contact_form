@@ -1,5 +1,6 @@
 {
   "name": "",
   "password": "",
-  "endpoint": "https://www.symphony-solutions.eu/contact-us/"
+  "endpoint": "https://www.symphony-solutions.eu/contact-us/",
+  "endpoint_quick_apply": "https://www.symphony-solutions.eu/quick-apply/"
 }

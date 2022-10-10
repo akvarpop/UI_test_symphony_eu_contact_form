@@ -27,10 +27,12 @@ class PageLocatorsQuickApply:
     TECHNOLOGY = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/span[2]/select')
     YOUR_NAME = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/span[3]/input')
     YOUR_EMAIL = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/span[4]/input')
-    UPLOAD_CV = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/div[2]/label')
+    UPLOAD_CV = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/div[2]/span[1]/input')
     PRIVACY_POLICY_1 = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/span[5]/span/span/label/input')
     PRIVACY_POLICY_2 = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/span[6]/span/span/label/input')
     SUBMIT = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/input')
+    RESULT_POSITIVE = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/div[5]')
+    RESULT_FIELDS_HAVE_ERROR = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/div[5]')
 
 
 

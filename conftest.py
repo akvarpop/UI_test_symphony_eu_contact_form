@@ -1,15 +1,26 @@
 import pytest
+import random
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from fake_useragent import UserAgent
 
 
+options = Options()
+options.add_argument('--ignore-ssl-errors=yes')
+options.add_argument('--ignore-certificate-errors')
+# ua = UserAgent()
+# userAgent = ua.random
+# print(userAgent)
+# options.add_argument(f'user-agent={userAgent}')
 """
 Код для запуска с ПК  
 """
 @pytest.fixture(scope='function', autouse=True)
 def driver():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(chrome_options=options, service=ChromeService(ChromeDriverManager().install()))
     driver.maximize_window()
     driver.delete_all_cookies()
     yield driver

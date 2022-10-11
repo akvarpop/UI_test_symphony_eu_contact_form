@@ -35,8 +35,12 @@ class PageLocatorsQuickApply:
     RESULT_FIELDS_HAVE_ERROR = (By.XPATH, '//*[@id="wpcf7-f12314-p12310-o1"]/form/div[5]')
 
 
-
-
-
-
-
+class MainPage:
+    MAIN_LOGO_SS_GO_MAIN = By.XPATH, '//*[@id="siteHeader"]/div[1]/a'
+    MAIN_MENU_BUTTON_JOIN_US = By.ID, 'menu-item-7033'
+    PAGE_JOIN_US_CHECK = By.XPATH, '//*[@id="filterTitle"]'
+    JOIN_US_PAGE_LOCATION_LIST = By.XPATH, '//*[@id="filterForm"]/div[2]/div/div[2]/div[1]'
+    JOIN_US_PAGE_LOCATION_LIST_UKRAINE = By.XPATH, '//*[@id="filterForm"]/div[2]/div/div[2]/div[2]/div/div[1]'
+    CHECK_JOIN_US_PAGE_LOCATION_LIST_UKRAINE = By.ID, 'filterTitle'
+    BUTTON_APPLY_NOW = By.XPATH, '//*[@id="filterForm"]/div[4]/p/a'
+    CHECK_PAGE_APPLY_NOW = By.XPATH, '/html/body/main/article/div/div/div/div/div[1]/div/div/h2'

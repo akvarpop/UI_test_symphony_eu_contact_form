@@ -60,7 +60,7 @@ class TestElements:
             text_box_page.open()
             text_box_page.fill_fields_without_email()
             time.sleep(0.5)
-            driver.get_screenshot_as_file("screenshots/APPLY_NOW_without_email.png")
+            driver.get_screenshot_as_file("screenshots/ _without_email.png")
             assert text_box_page.check_field_have_error() == PageResponse.FIELDS_HAVE_ERROR, GlobalErrorMessage.INCORRECT_DATA
 
 
